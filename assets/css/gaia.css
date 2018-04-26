@@ -3754,3 +3754,6 @@ body {
 .d-block {
   display: block;
 }
+.email {
+  color: #27d2ca;
+}
