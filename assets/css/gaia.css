@@ -2091,11 +2091,12 @@ a,
 .section-clients-2 .nav-text > li.active a img:first-child {
   opacity: 0;
 }
-.section-clients-2 .tab-content {
+.section-clients-2 {
   text-align: center;
   max-width: 760px;
   min-height: 130px;
 }
+
 .section-clients-2 .tab-content p.large {
   color: #777777;
 }
@@ -2581,7 +2582,7 @@ a,
 .section-our-clients-freebie .tab-content,
 .section-our-clients .tab-content {
   text-align: center;
-  max-width: 760px;
+  /* max-width: 760px; */
   min-height: 130px;
   margin: 0 auto;
 }
@@ -3758,6 +3759,9 @@ body {
 }
 .bldv-title{
   padding-top: 110px;
+}
+th {
+    padding-left: 50px!important;
 }
 /* .pricing-package :focus {
     color: yellow !important;
