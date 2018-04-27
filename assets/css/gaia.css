@@ -3763,6 +3763,10 @@ body {
 th {
     padding-left: 50px!important;
 }
+.navbar-default1 {
+  background-color:#27d2ca;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
 /* .pricing-package :focus {
     color: yellow !important;
     text-decoration: underline!important;
