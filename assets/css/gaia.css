@@ -2632,7 +2632,6 @@ a,
 }
 
 .image-clients {
-  width: 90px;
   margin: 0 auto;
   margin-right: 8px;
   margin-left: 8px;
@@ -3760,3 +3759,8 @@ body {
 .bldv-title{
   padding-top: 110px;
 }
+/* .pricing-package :focus {
+    color: yellow !important;
+    text-decoration: underline!important;
+    background-color: red !important;
+} */
