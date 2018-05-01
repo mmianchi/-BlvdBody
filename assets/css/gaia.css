@@ -3869,6 +3869,15 @@ th {
   width: 100%;
   text-align: left;
 }
+
+.btn-read-more {
+  border-color: #fff;
+}
+.btn-read-more :hover {
+  border-color: #fff;
+  transform: translateY(0);
+  box-shadow: 0!important;
+}
 /* .pricing-package :focus {
     color: yellow !important;
     text-decoration: underline!important;
