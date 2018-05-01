@@ -67,7 +67,9 @@ h6,
 .content-blog p {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-family: "Cambo", "Times New Roman", serif;
+  font-family: 'Play',"Cambo",
+  "Times New Roman",
+  serif;
 }
 h1 a,
 .h1 a,
@@ -83,7 +85,9 @@ h6 a,
 .h6 a,
 .content-blog p a {
   font-size: inherit;
-  font-family: "Cambo", "Times New Roman", serif;
+  font-family: 'Play', "Cambo",
+  "Times New Roman",
+  serif;
 }
 
 .content-blog {
@@ -144,7 +148,11 @@ td,
 small,
 .media h5,
 .subtitle {
-  font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Play',"Poppins",
+  "Helvetica Neue",
+  Helvetica,
+  Arial,
+  sans-serif;
 }
 
 a {
@@ -156,7 +164,7 @@ span {
    color: #777777;
    opacity: .7;
    font-size: 14px;
-   font-family: "Poppins",
+   font-family: 'Play',"Poppins",
    "Helvetica Neue",
    Helvetica,
    Arial,
@@ -176,7 +184,11 @@ a:hover {
 }
 
 .title-modern {
-  font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Play',"Poppins",
+  "Helvetica Neue",
+  Helvetica,
+  Arial,
+  sans-serif;
   font-weight: 200;
 }
 
@@ -216,7 +228,7 @@ a:hover {
 .quotes:before, .quotes:after {
   position: absolute;
   font-size: 40px;
-  font-family: sans-serif;
+  font-family: 'Play',sans-serif;
   color: #777777;
   line-height: 0;
 }
@@ -773,7 +785,7 @@ a,
 
 .btn-lg {
   font-size: 14px;
-  border-radius: 4px;
+  border-radius: 6px;
   padding: 16px 32px;
 }
 .btn-lg.btn-round {
@@ -2215,7 +2227,11 @@ a,
   margin-bottom: 5px;
 }
 .client-logo h3 {
-  font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Play',"Poppins",
+  "Helvetica Neue",
+  Helvetica,
+  Arial,
+  sans-serif;
 }
 
 .section-team-1 {
@@ -3759,7 +3775,46 @@ body {
 }
 .bldv-title{
   padding-top: 110px;
+  animation-name: moveInLeft;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  letter-spacing: 27px;
 }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    transform: translate(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+.sub-title-blvd {
+   animation-name: moveInRight;
+   animation-duration: 3s;
+   animation-timing-function: ease-out;
+   letter-spacing: 10px;
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  80% {
+    transform: translate(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
 th {
     padding-left: 50px!important;
 }
@@ -3767,6 +3822,20 @@ th {
   background-color:#27d2ca;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
+.title-area {
+  backface-visibility: hidden;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
 /* .pricing-package :focus {
     color: yellow !important;
     text-decoration: underline!important;
