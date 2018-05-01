@@ -3836,6 +3836,19 @@ th {
   box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
 }
 
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s;
+}
+
 .btn-animated {
    animation: moveInBottom .5s ease-out .95s;
    animation-fill-mode: backwards;
@@ -3852,6 +3865,10 @@ th {
   }
 }
 
+#myDIV {
+  width: 100%;
+  text-align: left;
+}
 /* .pricing-package :focus {
     color: yellow !important;
     text-decoration: underline!important;
