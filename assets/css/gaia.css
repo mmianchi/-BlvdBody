@@ -3836,6 +3836,22 @@ th {
   box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
 }
 
+.btn-animated {
+   animation: moveInBottom .5s ease-out .95s;
+   animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
 /* .pricing-package :focus {
     color: yellow !important;
     text-decoration: underline!important;
