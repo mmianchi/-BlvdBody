@@ -3870,6 +3870,9 @@ th {
     background-color: red !important;
 } */
 
-.footer a, .footer ul li, .footer span {
+.footer a, .footer ul li, .footer span, .footer .copyright {
   color:white;
+}
+.footer-big .container hr {
+  border-top: 1px solid white; 
 }
