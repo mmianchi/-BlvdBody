@@ -3855,9 +3855,12 @@ th {
     background-color: red !important;
 } */
 
-.footer a, .footer ul li, .footer span, .footer .copyright {
+.footer a, .footer ul li, .footer span {
   color:white;
 }
+.footer .copyright {
+  color: #8f8f8f;
+}
 .footer-big .container hr {
-  border-top: 1px solid white; 
+  border-top: 1px solid #8f8f8f;
 }
