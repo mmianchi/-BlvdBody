@@ -1,18 +1,4 @@
-/*!
 
- =========================================================
- * Gaia Bootstrap Template - v1.0.1
- =========================================================
- 
- * Product Page: https://www.creative-tim.com/product/gaia-bootstrap-template
- * Copyright 2017 Creative Tim (http://www.creative-tim.com)
- * Licensed under MIT (https://github.com/creativetimofficial/gaia-bootstrap-template/blob/master/LICENSE.md)
- 
- =========================================================
- 
- * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
- */
- 
 /*      light colors         */
 html {
   font-size: 14px;
@@ -3771,7 +3757,7 @@ body {
   display: block;
 }
 .email {
-  color: #27d2ca;
+  color: #27d2ca!important;
 }
 .bldv-title{
   padding-top: 110px;
@@ -3849,7 +3835,7 @@ th {
   transition: all .4s;
 }
 
-.btn-animated {
+/* .btn-animated {
    animation: moveInBottom .5s ease-out .95s;
    animation-fill-mode: backwards;
 }
@@ -3863,7 +3849,7 @@ th {
     opacity: 1;
     transform: translate(0);
   }
-}
+} */
 
 #myDIV {
   width: 100%;
@@ -3883,3 +3869,7 @@ th {
     text-decoration: underline!important;
     background-color: red !important;
 } */
+
+.footer a, .footer ul li, .footer span {
+  color:white;
+}
