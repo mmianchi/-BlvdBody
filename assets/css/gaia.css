@@ -3864,3 +3864,7 @@ th {
 .footer-big .container hr {
   border-top: 1px solid #8f8f8f;
 }
+#video-play a {
+  color:white!important;
+ 
+}
