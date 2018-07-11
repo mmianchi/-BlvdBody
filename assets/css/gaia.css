@@ -228,7 +228,6 @@ a:hover {
   position: relative;
   animation: linerAnimated 4s ease-in ;
 }
-
 .separator:before, .separator:after {
   display: block;
   width: 40%;
