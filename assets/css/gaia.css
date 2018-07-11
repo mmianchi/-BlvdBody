@@ -169,14 +169,6 @@ a:hover {
   color: #777777;
 }
 
-.title-modern {
-  font-family: 'Play',"Poppins",
-  "Helvetica Neue",
-  Helvetica,
-  Arial,
-  sans-serif;
-  font-weight: 200;
-}
 
 .text-gray {
   color: #777777;
@@ -235,6 +227,7 @@ a:hover {
   max-width: 240px;
   text-align: center;
   position: relative;
+  animation: linerAnimated 4s ease-in ;
 }
 .separator:before, .separator:after {
   display: block;
@@ -3759,12 +3752,20 @@ body {
 .email {
   color: #27d2ca!important;
 }
-.bldv-title{
-  padding-top: 110px;
+.blvd-title{
+  font-family: 'Play',
+  "Poppins",
+  "Helvetica Neue",
+  Helvetica,
+  Arial,
+  sans-serif;
+  font-weight: 200;
   animation-name: moveInLeft;
   animation-duration: 3s;
   animation-timing-function: ease-out;
   letter-spacing: 27px;
+  display: block;
+  
 }
 
 @keyframes moveInLeft {
@@ -3781,11 +3782,11 @@ body {
   }
 }
 .sub-title-blvd {
-   animation-name: moveInRight;
-   animation-duration: 3s;
-   animation-timing-function: ease-out;
+   animation: moveInRight 3s ease-out;
    letter-spacing: 10px;
+   display: block;
 }
+
 
 @keyframes moveInRight {
   0% {
@@ -3801,6 +3802,28 @@ body {
   }
 }
 
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  100% {
+    opacity: 01;
+    transform: translate(0);
+  }
+}
+
+@keyframes linerAnimated {
+   from {
+     opacity: 0;
+   }
+
+   to {
+     opacity: 1;
+   }
+}
+
+
 th {
     padding-left: 50px!important;
 }
@@ -3808,9 +3831,9 @@ th {
   background-color:#27d2ca;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-.title-area {
+/* .title-area {
   backface-visibility: hidden;
-}
+} */
 
 .btn:hover {
   transform: translateY(-3px);
@@ -3834,7 +3857,15 @@ th {
   z-index: -1;
   transition: all .4s;
 }
+.btn:hover::after {
+  transform: scaleX(1.2) scaleY(1.4);
+  opacity: 0;
+}
 
+.btn-animated {
+  animation: moveInBottom 2s ease-out 1s;
+  animation-fill-mode: backwards;
+}
 
 #myDIV {
   width: 100%;
